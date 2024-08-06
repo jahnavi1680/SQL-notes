@@ -17,4 +17,8 @@ Row number, rank and dense_rank
 ---- wow we can give row numbers
 syntax-- row_number() over()
 
----- ranks (while row num
+---- ranks ---- rank() over(partition by column order by column)
+
+************IMPORTANT***********
+When using window function, we cannot use where clause conditioning the window columns (i.e. rank, sum or avg etc)
+
